@@ -131,34 +131,21 @@ document.querySelectorAll('#menu a').forEach(anchor => {
     });
 });
 
-// Mengambil elemen sprinkle-container
 const sprinkleContainer = document.querySelector('.sprinkle-container');
-
-// Fungsi untuk membuat sprinkle
 function createSprinkle() {
-    // Buat elemen sprinkle
     const sprinkle = document.createElement('div');
     sprinkle.classList.add('sprinkle');
-
-    // Posisi acak untuk sprinkle
     sprinkle.style.left = `${Math.random() * 100}%`;
     sprinkle.style.top = `${Math.random() * 100}%`;
-
-    // Tambahkan sprinkle ke kontainer
     sprinkleContainer.appendChild(sprinkle);
-
-    // Hapus sprinkle setelah animasi selesai (2 detik)
     setTimeout(() => {
         sprinkle.remove();
     }, 2000);
 }
 
-// Fungsi untuk menjalankan sprinkle secara terus menerus
 function sprinkleEffect() {
-    // Buat sprinkle setiap 300 ms
     setInterval(createSprinkle, 300);
 }
 
-// Jalankan efek sprinkle setelah halaman dimuat
 document.addEventListener('DOMContentLoaded', sprinkleEffect);
 
