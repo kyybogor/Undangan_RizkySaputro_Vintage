@@ -1,0 +1,360 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="invitation-container" id="invitation-container">
+        <p class="guest-name">Dear Guest: <span id="guest-name">Tamu Istimewa</span></p>
+        <img class="side-ornament left" src="images/4.png" alt="Ornamen Kiri" />
+        <img class="couple-image" src="images/10.jpg" alt="Joko & Fira" />
+        <img class="side-ornament right" src="images/4.png" alt="Ornamen Kanan" />
+        <h1 class="bride-groom-names">Joko & Fira</h1>
+        <button class="invite-btn" id="open-btn" onclick="showContent()">Buka Undangan</button>
+        
+        <p class="wedding-date">
+            <span>25</span>
+            <span class="month">Desember</span>
+            <span>2008</span>
+        </p>
+    </div>
+    
+    
+    <section id="main-content" style="display: none;">
+        <header class="header">
+            <h1>Joko & Fira Wedding</h1>
+            <p>Join us on our special day</p>
+        </header>
+        <section id="music-position">
+        <audio id="background-music" loop>
+            <source src="images/2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+        <div id="music-controls" style="display:none;">
+            <button id="play-pause-btn">Pause</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            <label for="volume-slider">Volume</label>
+        </div>
+    </section>
+
+    <section id="quotes">
+        <h2>Quotes</h2>
+        <h4>QS. Ar. Ruum (30):21</h4>
+        <p>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًۭا لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةًۭ وَرَحْمَةً ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍۢ لِّقَوْمٍۢ يَتَفَكَّرُونَ</p>
+        <p class="p1">“Dan diantara tanda-tanda kekuasaanNya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri,
+            supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir.”</p>
+    
+        <div class="audio-container">
+            <!-- Gambar ornamen kiri -->
+            <img class="ornament left" src="images/4.png" alt="Ornament Left">
+    
+            <!-- Elemen audio -->
+            <audio controls class="audio">
+                <source src="images/1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    
+            <!-- Gambar ornamen kanan -->
+            <img class="ornament right" src="images/4.png" alt="Ornament Right">
+        </div>
+
+        <div class="sprinkle-container"></div>
+    </section>
+    
+
+        <section id="profil">
+            <h2>Profil Pengantin</h2>
+            <div class="profile-pengantin">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img src="images/12.jpg" alt="Foto Pengantin 1" class="profile-pic">
+                        <h1 class="name">Joko</h1>
+                    </div>
+                    <p class="parents">Anak dari Bapak <strong>Slamet</strong> &amp; Ibu <strong>Imah</strong></p>
+                    <p class="instagram">
+                        <a href="https://www.instagram.com/lontongmesirrr?igsh=MTdlems2MTRqZm1rYQ==">
+                            <i class="fa-brands fa-square-instagram"></i> @lontongmesirrr
+                        </a>
+                    </p>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img src="images/13.jpg" alt="Foto Pengantin 2" class="profile-pic">
+                        <h1 class="name">Fira</h1>
+                    </div>
+                    <p class="parents">Anak dari Bapak <strong>Udin 2</strong> &amp; Ibu <strong>Jaenap</strong></p>
+                    <p class="instagram">
+                        <a href="https://www.instagram.com/lontongmesirrr?igsh=MTdlems2MTRqZm1rYQ==">
+                            <i class="fa-brands fa-square-instagram"></i> @lontongmesirrr
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="akad">
+            <div class="akad-item">
+                <h2>AKAD</h2>
+                <div class="akad-details">
+                    <div class="akad-card">
+                        <div class="icon">&#128197;</div>
+                        <p>Tanggal: 25-December-2008</p>
+                    </div>
+                    <div class="akad-card">
+                        <div class="icon">&#128339;</div>
+                        <p>Waktu: 15.00 - Selesai</p>
+                    </div>
+                    <div class="akad-card">
+                        <div class="icon">&#128205;</div>
+                        <p>Jalan Bintara Xia, Kota Bekasi, Bekasi Barat</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.119328420654!2d-122.42301368468182!3d37.82687757960036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d2d1c5e631%3A0x72b9d1d41f95d587!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1635396110123!5m2!1sen!2sus"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="gallery" class="section-gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="images/7.jpg" alt="Photo 1">
+                <img src="images/14.jpg" alt="Photo 2">
+                <img src="images/9.jpg" alt="Photo 3">
+                <img src="images/15.jpg" alt="Photo 4">
+                <img src="images/13.jpg" alt="Photo 5">
+                <img src="images/12.jpg" alt="Photo 6">
+                <img src="images/13.jpg" alt="Photo 7">
+                <img src="images/14.jpg" alt="Photo 8">
+            </div>
+            <div class="gallery-container video-grid">
+                <video controls poster="images/15.jpg">
+                    <source src="images/vid1.mp4" type="video/mp4">
+                </video>
+                <iframe src="https://youtu.be/GIjqBWrCVD0?si=9f5TVOQaA71yHuLP" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+
+            <section id="tamu">
+                <h1>Tamu Khusus</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Hubungan</th>
+                            <th colspan="2">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Bapak/Ibu Suharto</td>
+                            <td rowspan="2">Orang Tua Pengantin</td>
+                            <td>Ayah Pengantin Pria</td>
+                            <td class="status"><i class="fas fa-check-circle"></i> Hadir</td>
+                        </tr>
+                        <tr>
+                            <td>Ibu Pengantin Pria</td>
+                            <td class="status"><i class="fas fa-check-circle"></i> Hadir</td>
+                        </tr>
+                        <tr>
+                            <td>Bapak/Ibu Sugiono</td>
+                            <td>Keluarga Dekat</td>
+                            <td colspan="2" class="status pending"><i class="fas fa-clock"></i> Belum Konfirmasi</td>
+                        </tr>
+                        <tr>
+                            <td>Bapak/Ibu Wijaya</td>
+                            <td>Saudara Jauh</td>
+                            <td colspan="2" class="status not-attending"><i class="fas fa-times-circle"></i> Tidak Hadir</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+<section id="rsvp">
+    <h2>RSVP</h2>
+    <form id="rsvp-form" action="#" method="post">
+        <div class="form-group">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="attendance">Apakah Anda akan hadir?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="attendance" value="yes" required> Ya</label>
+                <label><input type="radio" name="attendance" value="no"> Tidak</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="guests">Jumlah Tamu Tambahan:</label>
+            <input type="number" id="guests" name="guests" min="0" max="10">
+        </div>
+
+        <div class="form-group">
+            <label for="meal">Pilihan Menu:</label>
+            <select id="meal" name="meal">
+                <option value="chicken">Ayam</option>
+                <option value="beef">Daging Sapi</option>
+                <option value="vegetarian">Vegetarian</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="special-request">Permintaan Khusus:</label>
+            <textarea id="special-request" name="special-request" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="allergies">Alergi (jika ada):</label>
+            <input type="text" id="allergies" name="allergies">
+        </div>
+
+        <div class="form-group">
+            <label for="subscribe">Langganan Pembaruan Acara?</label>
+            <label><input type="checkbox" id="subscribe" name="subscribe" value="yes"> Ya, kirimkan saya pembaruan</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Kirim RSVP</button>
+    </form>
+</section>
+
+ 
+<section id="story">
+    <div class="container">
+        <h2>Our Story</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <img src="images/12.jpg" class="timeline-image" alt="First Meeting">
+                    <h3>First Meeting - 2015</h3>
+                    <p>It all began when we met at a mutual friend's birthday party. Little did we know, that night would mark the start of something special. From that moment, we became inseparable.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <img src="images/15.jpg" class="timeline-image" alt="First Date">
+                    <h3>First Date - 2016</h3>
+                    <p>Our first date was full of laughter, joy, and excitement. We explored the city, had coffee in a cozy café, and shared our dreams. It was the beginning of our beautiful journey together.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <img src="images/7.jpg" class="timeline-image" alt="First Adventure">
+                    <h3>First Adventure - 2018</h3>
+                    <p>We love traveling and our first trip together was to Bali. We experienced new cultures, tried new foods, and created lasting memories under the sun.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <img src="images/9.jpg" class="timeline-image" alt="The Proposal">
+                    <h3>The Proposal - 2019</h3>
+                    <p>In a magical moment, under the stars during a mountain hike, John got down on one knee and asked Jane to be his forever. It was a night we will never forget.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <img src="images/8.jpg" class="timeline-image" alt="Our Wedding">
+                    <h3>Our Wedding - 2024</h3>
+                    <p>Now, we can't wait to celebrate the next chapter of our love story with all our friends and family. Join us as we say "I do" and begin the adventure of a lifetime together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="kirim-hadiah">
+    <h2>Kirim Hadiah</h2>
+    <div class="gift-options">
+        <div class="gift-card">
+            <img src="images/13.jpg" alt="Transfer Image" class="gift-image">
+            <h3>Transfer</h3>
+            <img src="images/bca.jpg" alt="BCA Logo" class="bca-logo">
+            <p>No. Rekening: <span id="rekening">087811561820</span></p>
+            <button onclick="copyText('rekening')" class="copy-btn">Salin No. Rekening</button>
+        </div>
+        <div class="gift-card">
+            <img src="images/14.jpg" alt="Gift Image" class="gift-image">
+            <h3>Kado</h3>
+            <img src="images/alamat.jpg" alt="alamat" class="alamat">
+            <p>Alamat: <span id="alamat">Jl. Bintara xia, Bekasi Barat</span></p>
+            <button onclick="copyText('alamat')" class="copy-btn">Salin Alamat</button>
+        </div>
+    </div>
+</section>
+
+<section id="pesan-doa">
+    <h2>Pesan dan Doa untuk Pengantin</h2>
+    <form id="message-form" action="#" method="post">
+        <div class="form-group">
+            <label for="message">Pesan dan Doa:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tulis pesan dan doa Anda untuk pengantin..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Kirim Pesan</button>
+    </form>
+</section>
+
+<section id="footer">
+    <div class="footer-container">
+        <h2>Terima Kasih</h2>
+        <p>Kami sangat berterima kasih atas doa dan dukungan yang diberikan pada hari istimewa kami. Semoga Tuhan memberkati kita semua dengan kebahagiaan dan kesehatan.</p>
+        <p>Dengan cinta,</p>
+        <p><strong>Joko & Fira</strong></p>
+    </div>
+</section>
+
+<section id="navbar">
+    <div id="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark" style="display:none;"></i>
+    </div>
+    <ul id="menu" class="hidden">
+        <li><a href="#main-content"><i class="fa-solid fa-home"></i></a></li>
+        <li><a href="#quotes"><i class="fa-solid fa-quote-right"></i></a></li>
+        <li><a href="#profil"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="#akad"><i class="fa-solid fa-calendar-day"></i></a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-images"></i></a></li>
+        <li><a href="#tamu"><i class="fa-solid fa-users"></i></a></li>
+        <li><a href="#rsvp"><i class="fa-solid fa-pen"></i></a></li>
+        <li><a href="#story"><i class="fa-solid fa-book-open"></i></a></li>
+        <li><a href="#kirim-hadiah"><i class="fa-solid fa-gift"></i></a></li>
+        <li><a href="#pesan-doa"><i class="fa-solid fa-heart"></i></a></li>
+        <li><a href="#footer"><i class="fa-solid fa-thumbs-up"></i></a></li>
+    </ul>
+</section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
